@@ -1,0 +1,236 @@
+/* Lets take our knowledge of CSS selectors, properties, and inheritance to add some style to the Sweet Eats Bakery website.  
+
+Task 1: Fork this pen.  You will want to have your own version saved.
+
+Task 2: Explore the CSS.  Look at all the unique selectors.  Find things that are new to you and learn what they do.  Find properties you may not be familiar with and google them.
+
+Task 3: Update the CSS.  You will notice the CSS comments throughout the file below.  Follow the instructions to complete the Sweet Eats Bakery site.  If you follow the instructions, you should see this as a final result:
+
+https://tk-assets.lambdaschool.com/44f6a520-b218-4ed1-910b-f4dc876cd1a6_sweet-eats-home-page.png
+
+Task 4: Submit this project and the HTML project to canvas. Once you have submitted, feel free to look at stretch.
+
+***DO NOT ATTEMPT STRETCH UNTIL YOU ARE FINISHED WITH EVERYTHING ELSE!***
+
+Stretch Task: Fork your final work and see how much you can change the design without changing the HTML.  Try to transform the site by only using CSS selectors.
+
+Stretch Task: Look at CSS animations and see if you could integrate them on the navigation hovers.
+
+Stretch Task: Pick a navigation item and create a new page with the same header and footer as the home page.  Example: you could make a new page just for cookies.  Be creative and have fun coming up with your own unique content and styles. 
+
+*/
+
+
+/*======= Create a new universal selector that changes the font color to: #3C373B */
+
+* {
+    color: #3C373B;
+}
+h1 {
+  font-family: 'Chelsea Market';
+  margin: 20px 0;
+  /*=======  Update the font size to 60px and center the text */
+  font-size: 60px;
+   text-align: center;
+
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Gaegu', cursive;
+  margin-bottom: 0;
+  padding: 0 10px;
+  /*=======  Update the font size to 30px */
+  font-size: 30px;
+}
+
+p {
+font-size: 16px;
+font-family: roboto;
+padding: 10px;
+line-height: 1.4;
+text-align: center;
+
+}
+
+img {
+  border-radius: 50%;
+  width:200px;
+  height:200px;
+}
+
+.content-row {
+  display: flex;
+  width: 800px;
+
+}
+
+.content-row div {
+  margin: auto;
+  
+
+  /*======= create a margin propery.  Set the value to 20px */
+}
+
+.box {
+  background-color: #DDB9A3;
+  margin: 5px;
+  color: white;
+}
+
+.box > p {
+  color:white;  
+  text-align: center;
+
+}
+
+.pics {
+  text-align:center;
+margin:20px;
+  
+}
+
+.container {
+  /*======= create a width property. Set the value to 600px */
+  margin: 0 auto;
+  width: 800px;
+
+}
+
+.container header nav a {
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  height:20px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-right: 60px;
+  background-color: #F87B99;
+}
+.container footer nav a {
+  margin: 0 10px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  display: inline-block;
+  border-radius: 15px;
+  height:20px;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+  margin-right: 60px;
+  background-color: #F87B99;
+
+   /*======= create a background property. Set the value to #F87B99 */
+  
+}
+
+.container header nav a:hover {
+  background: white;
+  color: pink
+/*======= create a background property and set it to white.  Then create a color property and set it's value to pink. */
+}
+
+/*======= Create a selector for the about section to have the following styles:
+  margin-top: 20px;
+*/
+
+.container header nav a.plan{
+  background-color:#FF764E;
+}
+
+.container header nav a.learn{
+  background-color:#5ED3EB;
+}
+.container footer nav a.get{
+  background-color:#FFCD69;
+}
+
+.container footer nav a.plan{
+  background-color:#FF764E;
+}
+
+.container footer nav a.learn{
+  background-color:#5ED3EB;
+}
+.container footer nav a.get{
+  background-color:#FFCD69;
+}
+
+
+.about-section {
+  margin-top: 20px;
+}
+
+.contact-section {
+  border-top: 1px dashed black;
+  padding: 20px 0;
+}
+
+.contact-section h2 {
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+/*======= Create a selector for the address tag in the contact-section class to have the following styles:
+   line-height: 2;
+*/
+
+ address {
+  line-height: 2;
+}
+
+
+footer {
+  width: 100%;
+  border-top: 1px dashed white;
+}
+
+footer .footer-content { 
+  margin: 0 auto; 
+  width: 600px;
+  /*======= create a width property. Set the value to 600px */
+  
+}
+
+footer .footer-content h3 {
+  padding: 0;
+  margin: 20px 0;
+}
+
+footer nav {
+  display: flex;
+}
+
+/*======= Create a selector for the anchor tag in the footer to have the following styles:
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+*/
+
+footer nav a:first-child {
+  margin-left: 0;
+  
+}
+
+footer a{
+  margin: 10px;
+  color: black;
+  text-decoration: underline;
+ 
+}
+
+a:hover	{
+  color:white;
+}
+/*======= Create a hover state for the anchor tag in the footer nav to have the following styles:
+  color: white;
+*/
+
+footer .footer-content .copyright {
+  padding: 20px 0;
+  text-align: center;
+
+   /*======= center the text here */
+}
